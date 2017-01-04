@@ -6,7 +6,7 @@ ENV SSPORT 12345
 ADD ./shadowsocks.sh /var/
 WORKDIR /var/
 RUN chmod +x shadowsocks.sh
-RUN /bin/sh ./shadowsocks.sh
+RUN ./shadowsocks.sh
 EXPOSE 12345:12345
 
 
