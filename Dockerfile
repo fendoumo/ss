@@ -7,6 +7,7 @@ ADD ./shadowsocks.sh /var/
 WORKDIR /var/
 RUN chmod +x shadowsocks.sh
 RUN ./shadowsocks.sh 2>&1|tee shadowsocks.log
+EXPOSE $SSPORT
 
 
 
